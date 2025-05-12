@@ -1,3 +1,7 @@
+<centre>
+    <img src='./silly-logo.png' alt='A really daft logo that made me smile'/>
+</centre>
+
 # party-streamer
 Tech task: A log streamer
 
