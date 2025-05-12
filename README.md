@@ -12,7 +12,7 @@ Tech task: A log streamer
 - [TODO](./TODO.md) - I write EVERYTHING down, its just how I work, so here is my TODO list.
 
 ## Design
-- Web based because I am comfotable with it, could I have done it with Electron or Desktop?
+- Web based because I am comfotable with it, could I have done it with Electron or Desktop or VSCode (my repos will answer that with a yes)?
 - [TLDRAW](https://www.tldraw.com/p/CL5z-LoIRzng-31hCtqfk?d=v-64.443.1744.1168.page) or [design-ideas.png](./design-ideas.png)
 
 Which translates to this API design:
