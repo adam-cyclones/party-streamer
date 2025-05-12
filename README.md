@@ -8,7 +8,7 @@ https://docs.google.com/document/d/18aRtOHwuJSL__AJGflHzg5oI9aoNk-EUYPuvzbJDI7A/
 
 ## Design
 - Web based because I am comfotable with it, could I have done it with Electron or Desktop?
-- [TLDRAW](https://www.tldraw.com/p/CL5z-LoIRzng-31hCtqfk?d=v-64.443.1744.1168.page) or `./design-ideas.png`
+- [TLDRAW](https://www.tldraw.com/p/CL5z-LoIRzng-31hCtqfk?d=v-64.443.1744.1168.page) or [design-ideas.png](./design-ideas.png)
 
 Which translates to this API design:
 ```
