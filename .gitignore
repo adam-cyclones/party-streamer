@@ -172,7 +172,10 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# OS Specific
 .DS_Store
 
 # RBF - realy big files
 artifacts/*
+node_modules
