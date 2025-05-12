@@ -4,7 +4,7 @@ Tech task: A log streamer
 ## Meta
 - You can see my thoughts on the requirements here:
 https://docs.google.com/document/d/18aRtOHwuJSL__AJGflHzg5oI9aoNk-EUYPuvzbJDI7A/edit?tab=t.0
-- Docker is not going to be used to ship or develop this, to give you a better chance to review.
+- Docker is used but I will explain how to use the host machine if you enjoy that sort of thing.
 
 ## Design
 - Web based because I am comfotable with it, could I have done it with Electron or Desktop?
@@ -22,26 +22,106 @@ I will be using FastAPI to make the swagger OpenAPI compliant API.
 
 Even if this idea is horrible, I still want to use MCP to perform searches on tags, I think this will be an interesting learning tool.
 
+# Project Setup
+
+## Prerequisites
+- Python 3.9 / (LTS) 
+- Node.js 22 / (LTS) 
+- Poetry (Python dependency management)
+- Git
+
 ## Install
-### Backend - python, poetry
-```sh
+0. **Clone the Repository**
 
+### Quickly with Docker
+```sh
+docker compose up
 ```
 
-### UI - Node, vue3 (vite)
-#### 1. node.js**
-```sh
+### Manual Backend - Python with Poetry
 
+1. **Install Poetry**
+Poetry makes it easy install Python projects inside the project directory, using a venv, similar to node.js development in some ways. Follow the docs to install poetry.
+
+[Poetry docs](https://python-poetry.org/docs/)
+
+3. **Install Python Dependencies**
+   ```bash
+   # Navigate to backend directory
+   cd projects/api
+
+   # Install dependencies in project venv
+   poetry install
+   ```
+
+### Manual Frontend - Vue3 with Vite
+
+1. **Node.js Installation**
+   ```bash
+   # Recommended: Use nvm (Node Version Manager)
+   # Install nvm first: https://github.com/nvm-sh/nvm#installing-and-updating
+   
+   # Install latest Node.js LTS
+   nvm install --lts
+   nvm use --lts
+
+   # Alternative: Direct download from nodejs.org
+   # Or use package manager (varies by OS and Platform)
+   ```
+
+2. **Install Frontend Dependencies**
+   ```bash
+   # Navigate to frontend directory
+   cd projects/ui
+
+   # Install dependencies
+   npm i
+   ```
+
+## Development Workflow
+
+### Run Backend (FastAPI)
+```bash
+# In backend directory
+cd projects/api
+poetry run uvicorn main:app --reload
 ```
 
-
-#### 2. Vue 3 - Vite
-```sh
-
+### Run Frontend (Vite)
+```bash
+# In frontend directory
+cd projects/ui
+npm run dev
 ```
 
-## Run
-### Backend 
-...
-### UI
-...
+### Run Tests
+
+#### Backend Tests
+```bash
+# In backend directory
+cd projects/api
+poetry run pytest
+```
+
+#### Frontend Tests
+```bash
+# In frontend directory
+cd projects/ui
+npm run test
+```
+
+## Production Build
+
+### Build Frontend
+```bash
+# In frontend directory
+cd projects/ui
+npm run build
+```
+
+### Run Production Server
+```bash
+# In backend directory
+cd projects/api
+poetry run uvicorn main:app
+```
