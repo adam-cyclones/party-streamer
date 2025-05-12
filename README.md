@@ -15,7 +15,7 @@ Which translates to this API design:
 GET /api/logs - List all available log files
 GET /api/logs/{id} - Read a specific log file with chunking parameters
 GET /api/logs/{id}/search?query={keywords} - Search within a log file
-GET /api/logs/{id}/errors - Quick navigation to errors
+GET /api/logs/{id}/errors - Quick navigation to errors re-using search
 ```
 
 I will be using FastAPI to make the swagger OpenAPI compliant API.
