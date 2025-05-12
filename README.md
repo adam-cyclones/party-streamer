@@ -6,8 +6,8 @@
 Tech task: A log streamer
 
 ## Meta
-- You can see my thoughts on the requirements here:
-https://docs.google.com/document/d/18aRtOHwuJSL__AJGflHzg5oI9aoNk-EUYPuvzbJDI7A/edit?tab=t.0
+- [REQUIREMENTS](https://docs.google.com/document/d/18aRtOHwuJSL__AJGflHzg5oI9aoNk-EUYPuvzbJDI7A/edit?tab=t.0) You can see my thoughts on the requirements here:
+
 - Docker is used but I will explain how to use the host machine if you enjoy that sort of thing.
 - [TODO](./TODO.md) - I write EVERYTHING down, its just how I work, so here is my TODO list.
 
