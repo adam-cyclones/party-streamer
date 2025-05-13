@@ -6,7 +6,6 @@ authors = [
     {name = "Adam crockett",email = "mr.adam.crockett@gmail.com"}
 ]
 license = {text = "MIT"}
-readme = "README.md"
 requires-python = ">=3.13"
 
 [tool.poetry.dependencies]
@@ -14,13 +13,14 @@ python  = ">=3.13"
 fastapi = ">=0.115.12,<0.116.0"
 uvicorn = ">=0.34.1,<0.35.0"
 
+[tool.poetry]
 packages = [
-  { include = "api" }
+  { include = "server" }
 ]
 
 [tool.poetry.scripts]
-dev = "api:dev"
-prod = "api:prod"
+dev = "server:dev"
+prod = "server:prod"
 
 
 [build-system]
