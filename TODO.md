@@ -6,7 +6,7 @@ This is the working task list for the log streaming full-stack app.
 
 ## Core Features
 
-- [ ] **Setup install** 
+- [x] **Setup install** 
 - [ ] **Create REST API**  
   _Pagination support, OpenAPI schema, async file reading without full memory load._
 - [ ] **Create frontend UI**  
@@ -29,10 +29,10 @@ This is the working task list for the log streaming full-stack app.
 
 ## Flex Goals
 
-- [ ] **Production-ready build**
-  - [ ] Backend with `gunicorn` + `uvicorn`
-  - [ ] Frontend with `vite build`
-  - [ ] Optional Dockerfile and `docker-compose.yml`
+- [x] **Production-ready build**
+  - [x] Backend with `uvicorn`
+  - [x] Frontend with `vite build`
+  - [x] Optional Dockerfile and `docker-compose.yml`
 - [ ] **CI setup**  
   _GitHub Actions or similar to lint, test, and maybe build._
 - [ ] **UI Enhancements**
