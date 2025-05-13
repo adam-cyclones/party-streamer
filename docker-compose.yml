@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  api:
+    build:
+      context: ./projects/api
+    ports:
+      - "9000:9000"
+
+  ui:
+    build:
+      context: ./projects/ui
+    ports:
+      - "4173:4173"
