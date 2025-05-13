@@ -40,7 +40,7 @@ Even if this idea is horrible, I still want to use MCP to perform searches on ta
 ## Install
 0. **Clone the Repository**
 
-### Quickly with Docker
+### Prod with Docker
 ```sh
 docker compose up
 ```
@@ -89,14 +89,12 @@ Poetry makes it easy install Python projects inside the project directory, using
 
 ### Run Backend (FastAPI)
 ```bash
-# In backend directory
 cd projects/api
-poetry run uvicorn main:app --reload
+poetry run dev
 ```
 
 ### Run Frontend (Vite)
 ```bash
-# In frontend directory
 cd projects/ui
 npm run dev
 ```
@@ -105,30 +103,12 @@ npm run dev
 
 #### Backend Tests
 ```bash
-# In backend directory
 cd projects/api
 poetry run pytest
 ```
 
 #### Frontend Tests
 ```bash
-# In frontend directory
 cd projects/ui
 npm run test
-```
-
-## Production Build
-
-### Build Frontend
-```bash
-# In frontend directory
-cd projects/ui
-npm run build
-```
-
-### Run Production Server
-```bash
-# In backend directory
-cd projects/api
-poetry run uvicorn main:app
 ```
