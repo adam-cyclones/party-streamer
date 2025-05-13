@@ -91,6 +91,7 @@ Poetry makes it easy install Python projects inside the project directory, using
 ```bash
 cd projects/api
 poetry run dev
+# http://127.0.0.1:9000/docs
 ```
 
 ### Run Frontend (Vite)
